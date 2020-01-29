@@ -1,3 +1,4 @@
+![](https://github.com/ravel-lab/VALENCIA/blob/master/valencia_logo.png)
 # Tutorial for VALENCIA
 
 ##### Author: Michael France
