@@ -26,7 +26,7 @@ VALENCIA takes as input:
  
 The script is run as follows:
  
-python /path/to/Valencia_v1.py /path/to/CST_profiles_v1.csv /path/to/test_dataset.csv
+python /path/to/Valencia_v1.py /path/to/CST_profiles_012920.csv /path/to/test_dataset.csv
  
 The output will be a file named something like “test_dataset_VALENCIA_CST.csv”, all of the added CST information will appear as the final columns of the dataset.
  
