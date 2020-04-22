@@ -8,8 +8,6 @@ import sys
 #removing the  warning that pandas has for when you do complicated things
 pd.options.mode.chained_assignment = None  # default='warn'
 
-#!/usr/bin/python
-
 #ComSTaT (COMmunity Stat Type clAssifying Tool)
 ###The purpose of this tool is to classify vaginal microbial communities into community state types (CSTs)
 ###in a standardized and repeatable fashion, clusters are based on the 13,000+ women data
