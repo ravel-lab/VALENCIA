@@ -3,7 +3,7 @@
 
 ##### Author: Michael France
 
-*Please contact the [author](mailto:mfrance@som.umaryland.edu?subject=[GitHub]%20VALENCIA)if you have any questions, suggestions, or if would like to contribute data to further develop VALENCIA. Thank you and Enjoy!*
+*Please contact the [author](mailto:mfrance@som.umaryland.edu?subject=[GitHub]%20VALENCIA) if you have any questions, suggestions, or if would like to contribute data to further develop VALENCIA. Thank you and Enjoy!*
 
 &nbsp;
 **VALENCIA** is a nearest-centroid based algorithm for the classification of human vaginal microbial community into state types based on their taxonomic composition. Samples are individually assigned to community state types (CSTs) based on their similarity to a set of thirteen reference centroids. The assignments provided by VALENCIA are reproducible and comparable across studies. Reference centroids were identified and defined using a dataset of >13,000 vaginal microbial taxonomic compositions from >1,900 North American women. We have done fairly extensive work to validate the usage of VALENCIA on vaginal microbial communities (see publication) including those that were derived from sequencing the V1V3, V3V4 and V4 regions. We have also looked at how it performs on samples from adolescent girls and post menopausal women, as well as on reproductive age African women. 
