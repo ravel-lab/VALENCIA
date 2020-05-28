@@ -11,7 +11,7 @@
 ---
 **Required dependencies** 
 
-> Python 3.0+ with pandas, numpy, and sys modules
+> Python 3.0+ with pandas, numpy, argparse, and matplotlib modules
 
 
 Taxa names need to match used by VALENCIA for proper CST assignment. We use species level assignments for the *Lactobacillus*, *Gardnerella*, *Prevotella*, *Atopobium* and *Sneathia*. These appear as “Genus_species” format (e.g. “Lactobacillus_crispatus”. All other taxa are summarized to the genus or higher level. These appear as “g_Genus” or “f_Family” (e.g. “g_Bifidobacterium”). It is important that the major vaginal taxa’s names match the reference. This includes any critical in the definition of a CST, which appear below. *Prevotella* often causes problems due variations in naming conventions. If you are having difficulty with this taxa it is okay to combine all the data into "g_Prevotella", just make sure to use the reference centroid with the matching change .
@@ -19,16 +19,21 @@ Taxa names need to match used by VALENCIA for proper CST assignment. We use spec
 ---
 **Running VALENCIA** 
 
-VALENCIA takes as input: 
-- (1) the reference centroids file (provided)
+VALENCIA has the follow required arguments: 
 
-- (2) CSV file of the sample dataset with column 1 named “sampleID” containing unique sample names and column 2 named “read_count” containing each sample’s total read count. The remaining columns are expected to be taxa read counts, with the taxa name as the header.
- 
+- -ref, --reference : path to the reference centroids file (provided)
+
+- -i, --input : CSV file of the sample dataset with column 1 named “sampleID” containing unique sample names and column 2 named “read_count” containing each sample’s total read count. The remaining columns are expected to be taxa read counts, with the taxa name as the header.
+
+- -o, --output : File prefix to store the output, all of the added CST information will appear as the final columns of the dataset
+
+And the following optional arguments:
+- -p, --plot : File prefix to store diagnostic plot in, not generated unless this argument is provided
+
 The script is run as follows:
  
-python /path/to/Valencia_v1.py /path/to/CST_profiles_012920.csv /path/to/test_dataset.csv
+python3 /path/to/Valencia.py -ref /path/to/CST_profiles_012920.csv -i /path/to/test_dataset.csv -o /path/to/test_out -p /path/to/test
  
-The output will be a file named something like “test_dataset_VALENCIA_CST.csv”, all of the added CST information will appear as the final columns of the dataset.
  
 ---
 **CST architecture** 
