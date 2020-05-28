@@ -49,9 +49,9 @@ python3 /path/to/Valencia.py -ref /path/to/CST_profiles_012920.csv -i /path/to/t
   - CST **III-B** less *L. iners* but still majority
 
 -**CST IV** communities that have a low relative abundance of *Lactobacillus* spp. and include subtypes
-  - CST **IV-A** contain a high to moderate relative abundance of BVAB1 and *G. vaginalis*
-  - CST **IV-B** contain a high to moderate relative abundance of *G. vaginalis*
-  - CST **IV-C** do not contain *G. vaginalis*, BVAB1, or *Lactobacillus* spp. and include
+  - CST **IV-A** contains a high to moderate relative abundance of BVAB1 and *G. vaginalis*
+  - CST **IV-B** contains a high to moderate relative abundance of *G. vaginalis* and *A. vaginae* 
+  - CST **IV-C** contains low relative abundances of *G. vaginalis*, BVAB1, and *Lactobacillus* spp. and includes
   
       - CST **IV-C0** relatively even community with *Prevotella* spp.
       - CST **IV-C1** dominated by *Streptococcus* spp.
