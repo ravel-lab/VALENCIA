@@ -61,5 +61,13 @@ python3 /path/to/Valencia.py -ref /path/to/CST_profiles_012920.csv -i /path/to/t
 
 -**CST V** communities are dominated by *L. jensenii*
 
+---
+**qiime2 conversion script**
+
+This script takes ouput from qiime2 and converts it to a format suitable for VALENCIA. The two files expected as input are the ASV taxon names key and the ASV read count table. The expected output is a new table which contains the samples as rows and the condensed taxa as columns. This file can be used as input to VALENCIA. The second file provides a link between the original taxa names and the condensed names.
+
+The script is run as follows:
+
+python3 /path/to/convert_qiime.py /path/to/taxon_key.csv /path/to/asv_count_table.csv 
 
 
